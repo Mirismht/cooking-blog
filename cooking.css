@@ -1,0 +1,315 @@
+body{
+    /*--fovourite-purple-if--main-color is invalid and blue if--favourite--purple is invalid*/
+font-family: Arial, Helvetica, sans-serif;
+width: 90%;
+font-size: 16px;
+line-height: 1.4em;
+overflow: auto;
+margin:0 auto;
+--custom-blueviolet: blueviolet;
+--main-color:var(--custom-blueviolet)
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    
+}
+
+
+
+header,
+header>ul{
+    display: flex;
+    align-content: center;
+    margin: auto;
+    padding: 10px;
+    align-items: baseline;
+    list-style: none;
+    
+    
+}
+
+header>ul>li>a{
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    left:250px;
+    color: blue;
+    font-weight: bolder;
+    
+}
+
+header>li{
+   text-decoration: none; 
+}
+
+.searchbar{
+    position: relative;
+    bottom: 40px;
+    right: 75px;
+    height:25px;
+    display: inline-flex;
+}
+
+.searchbar__input{
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+    border:1px solid blueviolet;
+    border-radius: 5px 0 0 5px;
+    background: rgb(248, 245, 250);
+    transition:0.25s, box-shadow 0.25s;
+}
+
+.searchbar__input:focus{
+    background: white;
+    box-shadow: 0 0 2px rgb(248, 245, 250);
+}
+
+.searchbar__input::placeholder{
+    color: rgb(155, 150, 151);
+}
+
+.searchbar__button{
+    height:25px;
+    width:40px;
+    background: blueviolet;
+    color: white;
+    outline:none;
+    border: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.searchbar__button:active{
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.main{
+    overflow: hidden;
+    width:90%;
+}
+
+.logo{
+    align-content: center;
+    position: relative;
+    bottom: 20px;
+    
+}
+
+input[type=radio]:checked+label{
+    color:blueviolet;
+}
+
+
+
+.discover{
+   
+    position: relative;
+    top: 30px;
+    padding: 20px;
+    font-size: 70px;
+    text-align: center;
+    color: blueviolet;
+    
+}
+
+.scroll{
+    overflow:scroll;
+    width:90%;
+    height: 200px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.whattocook>a,
+.whattocook{
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.guides{
+    text-align: center;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.strawberies{
+    width: 90%;
+    height:400px;
+  padding-left: 50px;
+}
+
+.container {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: hidden;
+    width: 940px;
+    border-radius: 10px;
+    
+    
+}
+
+.container>img{
+    border-style: hidden;
+    align-content: center;
+}
+
+.oftheday{
+    text-align: center;
+    color:white;
+    font-size: 80px;
+    
+}
+
+.oftheday:hover{
+    color: blueviolet;
+}
+
+.main2>h2>a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.main2{
+    line-height: 1.4em;
+    margin: 0 auto;
+    padding: 10px;
+    width:90%;
+    height:400px;
+    background-image: url(images/stock-photo-1036719002.jpg);
+    text-decoration: none;
+    text-align: center;
+}
+
+.main2:hover{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.menu1{
+    
+    align-content: center;
+    width: 100%;
+    margin: 5px;
+    padding: 20px;
+    background: url(images/stock-photo-1029148678.jpg) fixed center;
+
+}
+
+.menu2{
+    width:100%;
+    padding: 20px;
+    margin: 5px;
+    background: url(images/stock-photo-1029148678.jpg) fixed center;
+}
+
+.menu3{
+    width:100%;
+    padding: 20px;
+    margin: 5px;
+    background: url(images/stock-photo-1029148678.jpg) fixed center;
+}
+
+.menu4{
+    width:100%;
+    padding: 20px;
+    margin: 5px;
+    background:rgba(0, 0, 0, 1) url(images/stock-photo-1029148678.jpg) fixed center;
+}
+
+
+.preparation,
+.nutrition,
+.method,
+.ingredient
+{
+    color: white;
+}
+
+.name{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.upload{
+    position: relative;
+    right: 40px;
+}
+
+fieldset{
+    width: 94%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.photogallery1{
+    color:var(--main-color);
+    text-align: center;
+    font-size: 70px;
+}
+
+.photogallery{
+    display: flex;
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4,
+.photo5,
+.photo6,
+.photo7,
+.photo8,
+.photo9,
+.photo10{
+    width:300px;
+    height: 250px;
+    margin: 30px;
+    flex-wrap: wrap;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+
+.morephoto{
+   text-align: center;
+   border-bottom: solid;
+   color: blueviolet;
+}
+
+.footer{
+    text-align: center;
+    font-size: smaller;
+    padding: 3px;
+    background-color: white;
+    line-height: normal;
+    margin: 5px;
+    width: 98%;
+
+}
+
+
+@media only sreen and(max-width:480px)and(min-width:320px)and(min-resolution:300dpi),
+(orentation:landscape)
+{
+    
+}
