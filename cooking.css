@@ -151,24 +151,23 @@ h4 {
     color: var(--custom-blueviolet);
     text-align: center;
     align-self: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 60px;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 
 .name{
     text-align: center;
-    /* shape-outside: margin-box; */
     color: white;
-    font-family: 'Source Sans Pro';
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
     top: 150px;
     color: white;
     background-color: grey ;
-    margin: 0 300px;
-    padding: 20px;
+    margin: 0 202px;
+    padding: 10px;
+    opacity: 0.9;
 }
 
 
@@ -346,7 +345,7 @@ h4 {
 .next{
     position: relative;
     top: 90px;
-    left: 630px;
+    left: 500px;
     display: flex;
     text-align: center;
     transform: translate(-50% , -50%);
@@ -393,25 +392,66 @@ text-align: center;
     margin: 40px 0;
 }
 
+/*phone*/
+@media only screen and (max-width: 480px){
 
+h1.title {
+    font-size: 25px;
+    margin: 0;
+    padding: 20px 0 0 0;
+
+}
+
+.photo-recipe {
+    width: 100%;
+}
+
+h2.name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    font-size: 20px;
+    max-width: 100%;
+    
+}
+
+
+.information-prep{
+    width: 100%;
+    font-size: 14px;
+}
+
+.list1,
+.list2,
+.description{
+    font-size: 14px;
+  
+}
+
+.nutrition-banner h4,
+.ingredients-banner h4,
+.methode h4{
+    font-size: 16px;
+}
+
+.banner{
+    width: 100%;
+}
+
+
+.description{
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+}
+
+}
 
 /*SMARTPHONE*/
 
 @media only screen and (max-width: 767px){
  
-    .title{
-        font-size: 40px;
-        margin-block: auto;
-    }
-    
-    .name {
-    font-size: 20px;
-    width: max-content;
-    margin-inline: auto;
-    font-size: large;
-    font-weight: bold;
-    }
-    
+  
     .oftheday{
         font-size: 40px;
         
@@ -490,6 +530,20 @@ text-align: center;
         font-size: 12px;
     }
     
+    .name{
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    font-size: 15px;
+    max-width: 56.6%;
+    
+    }
+
+    .title{
+        margin: 15px 0;
+        font-size: 2.5em;
+    }
+
     .owl-carousel .owl-item img{
     margin: auto;
     max-width: 50%;
@@ -499,13 +553,15 @@ text-align: center;
 /*TABLET*/
 @media only screen and (min-width:768px) and (max-width: 1023px){
 
-.title{
-    margin-block: auto;
-}
 
     .name{
-        font-size: 30px;
-    }
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+        font-size: 15px;
+        max-width: 57.5%;
+        }
+
 
     .banner{
         width: 100%;
@@ -531,7 +587,11 @@ text-align: center;
 
     .next{
     position: relative;
-    left:430px;
+    left:400px;
     }
     
+.next a{
+    font-size: 15px;
+}
+
 }
