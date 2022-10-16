@@ -9,7 +9,7 @@
 /*Body*/
 body{
     /*--fovourite-purple-if--main-color is invalid and blue if--favourite--purple is invalid*/
-font-family: 'Source Sans Pro', serif, sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 max-width: 100%;
 font-size: 17px;
 line-height: 1.4em;
@@ -24,19 +24,17 @@ overflow-x: hidden;
     display: flex;
     height: 100px; 
     justify-content: space-between;
-    margin: 0 30px;
-    border-bottom: 2px solid black;
- 
+   margin: auto;
+    border-bottom: 1px solid black;
+    padding:  0 30px;
 }
 
 .nav ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
-    padding: 0;
-    font-weight: 900;
     align-self: center;
-  
+    font-weight: bold;
 }
 
 .nav ul li a {
@@ -51,9 +49,15 @@ overflow-x: hidden;
 
 /*main-body*/
 
+h4 {
+    font-family: 'Gilda Display', serif;
+}
+
+
+
 .hero-baner{
     background-image: url(./images/stock-photo-1036719002.jpg);
-    height: 400px;
+    height: 500px;
     width: 100%;
     margin: auto;
     background-size: cover;
@@ -99,7 +103,7 @@ overflow-x: hidden;
     margin: 10px;
     padding: 10px;
     color:white;
-    font-size: 80px;  
+    font-size: 80px;
 }
 
 .oftheday:hover{
@@ -108,23 +112,18 @@ overflow-x: hidden;
 
 .main2>h2>a{
     text-decoration: none;
-    color: white;  
+    color: white; 
 }
 
 .main2{
-    line-height: 2.5em;
+    line-height: 5em;
     text-align: center;
     margin: 30px 0;
     padding: 10px;
-    height:400px;
+    height:590px;
     background-image: url(images/pexels-fariborz-mp-9481570.jpg);
     background-position: center;
     background-size: cover;
-}
-
-.main2:hover{
-    font-size: 20px;
-    color: blueviolet;
 }
 
 
@@ -138,14 +137,6 @@ overflow-x: hidden;
 
 
 /*PHOTOGALLERY*/
-
-.photogallery{
-    color:var(--main-color);
-    text-align: center;
-    font-size: 60px;
-    height: 100px;
-    margin-top: 90px;
-}
 
 .morephoto{
    text-align: center;
@@ -168,10 +159,17 @@ overflow-x: hidden;
 
 .name{
     text-align: center;
-    padding: 20px;
-    color: blueviolet;
+    /* shape-outside: margin-box; */
+    color: white;
     font-family: 'Source Sans Pro';
-    font-size: 40px;  
+    font-size: 40px;
+    position: relative;
+    top: 150px;
+    color: white;
+    background-color: grey ;
+    margin: 0 300px;
+    padding: 20px;
+    mix-blend-mode: ;
 }
 
 
@@ -180,6 +178,7 @@ overflow-x: hidden;
     margin-left: auto;
     margin-right: auto;
     width:60%; 
+    filter: 
 }
 
 
@@ -229,6 +228,8 @@ overflow-x: hidden;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 3px 4px black);
 }
 
 .ingredients-banner{
@@ -240,19 +241,18 @@ overflow-x: hidden;
 }
 
 
-.ingredients-banner p{
+.ingredients-banner h4{
     text-align: center;
-    font-size: 20px;
-    font-family:monospace;
     margin: 20px; 
 }
 
 
 .ingredients-banner img{
     float: left;
-    position: relative;
-    top:8px;
-    left:15px;
+   width: 40px;
+   position: relative;
+   top: 10px;
+    
 }
 
 .list1{
@@ -264,7 +264,6 @@ overflow-x: hidden;
 
 .list1 ul{
   list-style: circle;
-    font-family: 'Source Sans Pro';
     line-height: 2em;
 }
 
@@ -274,19 +273,21 @@ overflow-x: hidden;
     padding: 0 30px;
     margin: 0 10px;
     border-radius: 8px;
-    height: 100%;
+    height: fit-content;
 }
 
-.nutrition-banner p{
-    margin: 10px;
+.nutrition-banner h4{
+    margin: 20px;
     padding-right: 20px;
     text-align: center;
 }
 
 .nutrition-banner img{
     float: left;
-    position: relative;
-    top: 15px;
+   width:35px;
+   position: relative;
+   top: 15px;
+   
 }
 
 .list2{
@@ -298,6 +299,7 @@ overflow-x: hidden;
 .list2 ul li{
     border-bottom-style: dotted;
     font-family: 'Source Sans Pro';
+    justify-self: start;
     list-style: none;
     line-height: 2.5em;
     text-align: center; 
@@ -308,42 +310,45 @@ overflow-x: hidden;
 /*Preparation*/
 .methode{
     background-color: floralwhite;
-    width:50%;
-     font-family: 'Source Sans Pro';
+    width:70%;
     line-height: 1.5em;
     text-align: justify;
-    margin-top: 10px;
+   padding: 20px 30px;
+    border-radius: 10px; 
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
-    border-radius: 10px;   
+    filter: drop-shadow(2px 3px 4px black);
 }
 
 
-.methode img{
-    float:left;   
+.methode img{  
+    width: 35px; 
+    position: relative;
+    top: 30px;
+    left: 40px;
 }
 
-.methode p{
-    margin: 20px;
+.methode h4{
+    text-align: center;
 }
 
 .methode1{
-    font-family: monospace;
-    font-size: 20px;
     text-align: center;
 }
 
 .description{
-    background-color: white; 
+    background-color: white;
     border-radius: 10px;
+    line-height: 1.9em;
+    margin: 20px;
+    padding: inherit;
 }
 
 
 .next{
     position: relative;
     top: 90px;
-    left: 650px;
+    left: 630px;
     display: flex;
     text-align: center;
     transform: translate(-50% , -50%);
@@ -374,7 +379,7 @@ footer {
     margin-top: 90px ;
     padding: 10px 0;
     width: 100%;
-    background-color: rgb(212, 189, 233);
+    background-color: gray;
     color: white;
     font-weight: 600;
     text-decoration: none;  
@@ -384,6 +389,13 @@ footer a{
     text-decoration: none;
      color: white;   
 }
+
+.dots{
+text-align: center;
+    margin: 40px 0;
+}
+
+
 
 /*SMARTPHONE*/
 
@@ -395,7 +407,11 @@ footer a{
     }
     
     .name {
-        font-size: 30px;
+    font-size: 20px;
+    width: max-content;
+    margin-inline: auto;
+    font-size: large;
+    font-weight: bold;
     }
     
     .oftheday{
@@ -408,7 +424,7 @@ footer a{
         font-weight: 900;
     }
     .container-cooking p{
-    font-family: 'Source Sans Pro';
+   
     max-width: 90%;
         
 }
@@ -437,10 +453,13 @@ footer a{
     }
     
     .nutrition-banner,
-    .ingredient-banner{
-    padding: 0px 20px;
-    margin: 0px 10px;
-    height: 100%;
+    .ingredients-banner{
+    width: 80%;
+    margin: auto;
+    }
+
+    .nutrition-banner h4{
+        padding-top: 20px;
     }
     
     
@@ -455,21 +474,27 @@ footer a{
     }
     
     .methode{
-        width:90%;
-        margin: 10px auto;
+        width:80%;
+        margin:  auto;
     }
     
     .banner{
+        display: block;
      width: 100%;
     }
 
     .next{
       position: relative;
-      left: 250px;
+      left: 280px;
     }
 
     .next a{
         font-size: 12px;
+    }
+    
+    .owl-carousel .owl-item img{
+    margin: auto;
+    max-width: 50%;
     }
 }
 
