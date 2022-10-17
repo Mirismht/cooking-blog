@@ -24,7 +24,7 @@ overflow-x: hidden;
     display: flex;
     height: 100px; 
     justify-content: space-between;
-   margin: auto;
+    margin: auto;
     border-bottom: 1px solid black;
     padding:  0 30px;
 }
@@ -56,7 +56,7 @@ h4 {
 
 
 .hero-baner{
-    background-image: url(./images/stock-photo-1036719002.jpg);
+    background-image: url(./images/pexels-engin-akyurt-1435909.jpg);
     height: 500px;
     width: 100%;
     margin: auto;
@@ -112,7 +112,9 @@ h4 {
 
 .main2>h2>a{
     text-decoration: none;
-    color: white; 
+    color: white;
+    font-weight: bold;
+    filter: drop-shadow(6px 5px 9px purple);
 }
 
 .main2{
@@ -121,7 +123,7 @@ h4 {
     margin: 30px 0;
     padding: 10px;
     height:590px;
-    background-image: url(images/pexels-fariborz-mp-9481570.jpg);
+    background-image: url(images/pexels-rama-khandkar-2113556.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -230,7 +232,7 @@ h4 {
 }
 
 .ingredients-banner{
-    width: 40%;
+    width: 4sxn 3XY RH 0%;
     margin: 5px 10px;
     padding: 10px 30px;
     background-color: floralwhite;
@@ -395,11 +397,39 @@ text-align: center;
 /*phone*/
 @media only screen and (max-width: 480px){
 
+
+.hero-baner{
+    height: 350px;
+}
+
+.main2{
+    height: 300px;
+}
+
+h1.oftheday{
+    font-size: 30px;
+}
+
+h2.main2{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+    .next{
+        font-size: 18px;
+        width: 60px;
+        height: 60px;
+      }
+
+      .next a{
+        font-size: 12px;
+      }
+
+
 h1.title {
     font-size: 25px;
     margin: 0;
-    padding: 20px 0 0 0;
-
+    padding-top: 20px;
 }
 
 .photo-recipe {
@@ -412,7 +442,6 @@ h2.name {
     padding: auto;
     font-size: 20px;
     max-width: 100%;
-    
 }
 
 
@@ -425,7 +454,6 @@ h2.name {
 .list2,
 .description{
     font-size: 14px;
-  
 }
 
 .nutrition-banner h4,
@@ -444,7 +472,6 @@ h2.name {
     margin: 0;
     padding: 1px;
 }
-
 }
 
 /*SMARTPHONE*/
@@ -453,8 +480,7 @@ h2.name {
  
   
     .oftheday{
-        font-size: 40px;
-        
+        font-size: 40px;   
     }
     .photogallery {
         font-size: 40px;
@@ -462,16 +488,13 @@ h2.name {
         font-weight: 900;
     }
     .container-cooking p{
-   
-    max-width: 90%;
-        
+    max-width: 90%;    
 }
     
     .nav{
         display: block;
         text-align: center;
-        line-height: 0.5px;
-            
+        line-height: 0.5px;      
     }
     
     .nav ul{
@@ -593,5 +616,4 @@ h2.name {
 .next a{
     font-size: 15px;
 }
-
 }
