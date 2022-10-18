@@ -160,16 +160,16 @@ h4 {
 
 
 .name{
-    text-align: center;
     color: white;
     font-size: 30px;
-    position: relative;
-    top: 150px;
     color: white;
     background-color: grey ;
-    margin: 0 202px;
-    padding: 10px;
     opacity: 0.9;
+    width: fit-content;
+    padding: 10px;
+    margin-inline: auto;
+    position: relative;
+    top:200px;
 }
 
 
@@ -345,11 +345,7 @@ h4 {
 
 
 .next{
-    position: relative;
-    top: 90px;
-    left: 500px;
     display: flex;
-    text-align: center;
     transform: translate(-50% , -50%);
     width: 10vw;
     height: 10vw;
@@ -359,6 +355,11 @@ h4 {
     box-shadow: 0px 0px 10px black;
     cursor: pointer;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 110px;
+    left: 65px;  
 }
 
 .next a{
@@ -394,6 +395,7 @@ text-align: center;
     margin: 40px 0;
 }
 
+
 /*phone*/
 @media only screen and (max-width: 480px){
 
@@ -404,6 +406,7 @@ text-align: center;
 
 .main2{
     height: 300px;
+    line-height: normal;
 }
 
 h1.oftheday{
@@ -413,17 +416,7 @@ h1.oftheday{
 h2.main2{
     font-size: 14px;
     line-height: 1.4;
-}
-
-    .next{
-        font-size: 18px;
-        width: 60px;
-        height: 60px;
-      }
-
-      .next a{
-        font-size: 12px;
-      }
+}   
 
 
 h1.title {
@@ -436,13 +429,7 @@ h1.title {
     width: 100%;
 }
 
-h2.name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
-    font-size: 20px;
-    max-width: 100%;
-}
+
 
 
 .information-prep{
@@ -544,23 +531,12 @@ h2.name {
      width: 100%;
     }
 
-    .next{
-      position: relative;
-      left: 280px;
-    }
 
     .next a{
         font-size: 12px;
     }
     
-    .name{
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
-    font-size: 15px;
-    max-width: 56.6%;
-    
-    }
+
 
     .title{
         margin: 15px 0;
@@ -569,7 +545,7 @@ h2.name {
 
     .owl-carousel .owl-item img{
     margin: auto;
-    max-width: 50%;
+    max-width: 70%;
     }
 }
 
@@ -577,13 +553,6 @@ h2.name {
 @media only screen and (min-width:768px) and (max-width: 1023px){
 
 
-    .name{
-        margin-left: auto;
-        margin-right: auto;
-        padding: auto;
-        font-size: 15px;
-        max-width: 57.5%;
-        }
 
 
     .banner{
@@ -608,12 +577,20 @@ h2.name {
         margin: 10px auto; 
     }
 
-    .next{
-    position: relative;
-    left:400px;
-    }
-    
-.next a{
-    font-size: 15px;
 }
+
+
+@media screen and (min-width: 1400px) {
+    .banner{
+        width:70%
+    }
+
+    .next a{
+        font-size: x-large;
+    }
+  
+
+@media screen and (min-width: 1600px) {
+
+
 }
